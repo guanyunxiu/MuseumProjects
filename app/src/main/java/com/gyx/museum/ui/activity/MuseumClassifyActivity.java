@@ -70,7 +70,7 @@ public class MuseumClassifyActivity extends BaseActivity implements BaseQuickAda
             public void run() {
                 museumClassifyAdapter.getRandomHeight(CommonUtil.getMenuActive());
                 museumClassifyAdapter.notifyDataChangedAfterLoadMore(CommonUtil.getMenuActive(), true);//更新数据
-
+                //.notifyItemRangeInserted(m);
             }
         };
         handler.post(r);
